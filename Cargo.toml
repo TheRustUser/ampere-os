@@ -1,0 +1,4 @@
+[package]
+name = "ampere-os"
+version = "0.1.0-rc0"
+edition = "2021"
