@@ -1,4 +1,29 @@
 [package]
 name = "ampere-os"
 version = "0.1.0-rc0"
+authors = [ "Hyun Ho Bae <spideu06@gmail.com>" ]
 edition = "2021"
+description = "An Experimental Operating System Written in Rust"
+documentation = "https://docs.rs/ampere-os"
+readme = "./README.md"
+repository = "https://github.com/TheRustUser/ampere-os"
+license-file = "./LICENSE.md"
+keywords = [ "osdev" ]
+categories = [ "Operating System" ]
+build = "build.rs"
+
+[workspace]
+members = [
+    "ampere-kernel",
+    "ampere-bootloader",
+    "ampere-diskimage",
+    "ampere-fs",
+    "ampere-libc",
+    "ampere-installer",
+    "ampere-drivers"
+]
+
+[[bin]]
+name = "force-build"
+path = "build.rs"
+required-features = ["build_deps"]

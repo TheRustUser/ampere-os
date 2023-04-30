@@ -1,0 +1,7 @@
+{
+    "rust-analyzer.check.allTargets": false,
+    //"rust-analyzer.cargo.target": "arch/x86_64/x86_64-unknown-ampere.json",
+    //"rust-analyzer.check.targets": [
+    //    "arch/x86_64/x86_64-unknown-ampere.json"
+    //],
+}
