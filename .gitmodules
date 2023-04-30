@@ -1,0 +1,21 @@
+[submodule "ampere-bootloader"]
+	path = ampere-bootloader
+	url = https://github.com/TheRustUser/ampere-bootloader.git
+[submodule "ampere-diskimage"]
+	path = ampere-diskimage
+	url = https://github.com/TheRustUser/ampere-diskimage.git
+[submodule "ampere-fs"]
+	path = ampere-fs
+	url = https://github.com/TheRustUser/ampere-fs.git
+[submodule "ampere-kernel"]
+	path = ampere-kernel
+	url = https://github.com/TheRustUser/ampere-kernel.git
+[submodule "ampere-drivers"]
+	path = ampere-drivers
+	url = https://github.com/TheRustUser/ampere-drivers.git
+[submodule "ampere-libc"]
+	path = ampere-libc
+	url = https://github.com/TheRustUser/ampere-libc.git
+[submodule "ampere-installer"]
+	path = ampere-installer
+	url = https://github.com/TheRustUser/ampere-installer.git
