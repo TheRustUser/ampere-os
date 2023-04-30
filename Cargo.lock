@@ -13,8 +13,9 @@ dependencies = [
 
 [[package]]
 name = "ampere-diskimage"
-version = "0.1.0-rc0"
+version = "0.1.0-rc1"
 dependencies = [
+ "anyhow",
  "fatfs",
  "gpt",
 ]
@@ -54,6 +55,12 @@ checksum = "819e7219dbd41043ac279b19830f2efc897156490d7fd6ea916720117ee66311"
 dependencies = [
  "libc",
 ]
+
+[[package]]
+name = "anyhow"
+version = "1.0.71"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9c7d0618f0e0b7e8ff11427422b64564d5fb0be1940354bfe2e0529b18a9d9b8"
 
 [[package]]
 name = "autocfg"
