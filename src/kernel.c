@@ -2,6 +2,6 @@
 #include "device.h"
 
 void kernel_start(void) {
-    VirtualDevice uart_device = { vprintc_uart };
+    device_t uart_device = { write_uart };
     vprintf(&uart_device, "Hello, World!\n");
 }

@@ -1,10 +1,13 @@
 #ifndef DEVICE_H
 #define DEVICE_H
 
-typedef struct {
-    void (*write_char)(char c);
-} VirtualDevice;
+#include <stdint.h>
 
-void vprintf(VirtualDevice *dev, const char* data);
+typedef struct {
+    void *address;
+    void (*write_char)(void *addr, uint32_t v);
+} device_t;
+
+void vprintf(device_t *dev, const char* data);
 
 #endif

@@ -4,8 +4,10 @@
 #include <stdint.h>
 #include <stdarg.h>
 
-void vprintc_uart(char c);
+#include "utils.h"
 
-void vprintf_uart(const char *s);
+#define UART_ADDR 0x90000000
+
+void *write_uart = write_volatile;
 
 #endif

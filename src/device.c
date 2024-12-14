@@ -1,8 +1,8 @@
 #include "device.h"
 
-void vprintf(VirtualDevice *dev, const char* data) {
+void vprintf(device_t *dev, const char* data) {
     while (*data) {
-        dev->write_char(*data);
+        dev->write_char(dev->address, *data);
         data++;
     }
 }
