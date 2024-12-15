@@ -6,8 +6,8 @@
 
 #include "utils.h"
 
-#define UART_ADDR 0x90000000
+#define UART_ADDR (void*)0x09000000
 
-void *write_uart = write_volatile;
+extern void *write_uart;
 
 #endif
